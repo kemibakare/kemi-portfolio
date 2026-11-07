@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Oluwakemi Bakare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Kemi<span>.</span></a>
+      <button class="menu-btn" id="menu-btn" aria-label="Open menu">&#9776;</button>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <header class="page-header">
+    <h1>My Projects</h1>
+    <p>Websites I have designed and built while learning web development.</p>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <img src="assets/images/project1.jpg" alt="Screenshot of the Teniaclothings website, version 1">
+            <div class="project-body">
+              <h2>Teniaclothings Fashion Store (Version 1)</h2>
+              <p>
+                The first version of an online fashion store homepage with a navigation bar,
+                a "Dress Better, Feel Greater" hero banner and a collection of outfits with Add to Cart buttons.
+              </p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="details" id="details-1">
+                <ul>
+                  <li>Header with logo and menu: Home, About, Shop, Contact</li>
+                  <li>Hero section with headline and "Shop Now" button</li>
+                  <li>"Our Collection" cards: Classy Wear, Elegant Dress, Chic Style</li>
+                  <li>Footer with social media icons</li>
+                </ul>
+              </div>
+              <div class="project-buttons">
+                <button class="btn btn-small btn-dark-outline details-btn" data-target="details-1">Project Details</button>
+                <a href="#" class="btn btn-small" target="_blank">Live Link</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <img src="assets/images/project2.jpg" alt="Screenshot of the Teniaclothings website, version 2">
+            <div class="project-body">
+              <h2>Teniaclothings Fashion Store (Version 2)</h2>
+              <p>
+                An improved version of the store with a new "Step up your style" banner,
+                prices in naira and a cleaner layout for the collection section.
+              </p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="details" id="details-2">
+                <ul>
+                  <li>New hero text: "Step up your style with Teniaclothings"</li>
+                  <li>Shopping cart icon in the menu</li>
+                  <li>Products with naira prices: Elegant Dress, Chic Set, Classy Gown</li>
+                  <li>Footer with logo, social icons and links</li>
+                </ul>
+              </div>
+              <div class="project-buttons">
+                <button class="btn btn-small btn-dark-outline details-btn" data-target="details-2">Project Details</button>
+                <a href="#" class="btn btn-small" target="_blank">Live Link</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <img src="assets/images/project3.jpg" alt="Screenshot of the About Me page of the Kemi portfolio">
+            <div class="project-body">
+              <h2>Kemi Student Portfolio</h2>
+              <p>
+                A multi-page student portfolio with Home, About Me, Projects, Academic Planner
+                and Contact pages. This screenshot shows an earlier design of the About Me page.
+              </p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="details" id="details-3">
+                <ul>
+                  <li>Separate folders for assets, css and js</li>
+                  <li>Sections for education, skills, career goals and hobbies</li>
+                  <li>Navigation bar linking all five pages</li>
+                  <li>Social media links in the footer</li>
+                </ul>
+              </div>
+              <div class="project-buttons">
+                <button class="btn btn-small btn-dark-outline details-btn" data-target="details-3">Project Details</button>
+                <a href="index.html" class="btn btn-small">Open Site</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <p class="note" style="text-align:center; margin-top:24px;">
+          The "Live Link" buttons are simulated links. Replace the # with your real link after hosting.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      <a href="index.html">Home</a>|<a href="about.html">About</a>|<a href="projects.html">Projects</a>|<a href="planner.html">Planner</a>|<a href="contact.html">Contact</a>
+    </p>
+    <p>&copy; 2026 Oluwakemi Elizabeth Bakare. COS 106 Term Project, MIVA Open University.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

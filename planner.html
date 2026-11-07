@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Oluwakemi Bakare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Kemi<span>.</span></a>
+      <button class="menu-btn" id="menu-btn" aria-label="Open menu">&#9776;</button>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html" class="active">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <header class="page-header">
+    <h1>Academic Planner</h1>
+    <p>Keep track of your assignments, tests and study goals.</p>
+  </header>
+
+  <main>
+    <section>
+      <div class="container planner-box">
+
+        <!-- Add task form -->
+        <form class="task-form" id="task-form">
+          <div>
+            <label for="task-title">Task</label>
+            <input type="text" id="task-title" placeholder="e.g. Finish COS 106 project">
+          </div>
+          <div>
+            <label for="task-date">Due date</label>
+            <input type="date" id="task-date">
+          </div>
+          <div class="full">
+            <p class="error" id="task-error"></p>
+            <button type="submit" class="btn">Add Task</button>
+          </div>
+        </form>
+
+        <!-- Counters -->
+        <div class="summary">
+          <div><strong id="count-total">0</strong><span>Total</span></div>
+          <div><strong id="count-pending">0</strong><span>Pending</span></div>
+          <div><strong id="count-done">0</strong><span>Completed</span></div>
+        </div>
+
+        <!-- Task list (filled by JavaScript) -->
+        <ul id="task-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      <a href="index.html">Home</a>|<a href="about.html">About</a>|<a href="projects.html">Projects</a>|<a href="planner.html">Planner</a>|<a href="contact.html">Contact</a>
+    </p>
+    <p>&copy; 2026 Oluwakemi Elizabeth Bakare. COS 106 Term Project, MIVA Open University.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

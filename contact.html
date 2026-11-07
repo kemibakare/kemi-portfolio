@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Oluwakemi Bakare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Kemi<span>.</span></a>
+      <button class="menu-btn" id="menu-btn" aria-label="Open menu">&#9776;</button>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <header class="page-header">
+    <h1>Contact Me</h1>
+    <p>Have a question or want to work together? Send me a message.</p>
+  </header>
+
+  <main>
+    <section>
+      <div class="container contact-grid">
+
+        <aside class="contact-info">
+          <h2>Let's Talk</h2>
+          <p>I'd love to hear from you. You can reach me using the details below or the form.</p>
+          <ul>
+            <li><strong>Name:</strong> Oluwakemi Elizabeth Bakare</li>
+            <li><strong>Email:</strong> <a href="mailto:oluwakemielizabeth4264@gmail.com">oluwakemielizabeth4264@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:08167465538">08167465538</a></li>
+            <li><strong>School:</strong> MIVA Open University</li>
+          </ul>
+        </aside>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your full name">
+            <p class="error" id="name-error"></p>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com">
+            <p class="error" id="email-error"></p>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="08012345678">
+            <p class="error" id="phone-error"></p>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Type your message here..."></textarea>
+            <p class="error" id="message-error"></p>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+          <p class="success-message" id="success-message"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      <a href="index.html">Home</a>|<a href="about.html">About</a>|<a href="projects.html">Projects</a>|<a href="planner.html">Planner</a>|<a href="contact.html">Contact</a>
+    </p>
+    <p>&copy; 2026 Oluwakemi Elizabeth Bakare. COS 106 Term Project, MIVA Open University.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

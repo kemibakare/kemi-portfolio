@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Oluwakemi Bakare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Kemi<span>.</span></a>
+      <button class="menu-btn" id="menu-btn" aria-label="Open menu">&#9776;</button>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Academic Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero: name, photo, welcome message -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="hero-small">Welcome to my portfolio</p>
+          <h1>Hello, I'm <span>Oluwakemi Elizabeth Bakare</span></h1>
+          <p class="hero-role">Computer Science Student at MIVA Open University</p>
+          <p class="hero-text">
+            Thank you for visiting my little corner of the internet. Here you can learn about me,
+            see the projects I have worked on, plan your own school tasks with my academic planner,
+            and send me a message.
+          </p>
+          <div class="hero-buttons">
+            <a href="projects.html" class="btn">View My Projects</a>
+            <a href="contact.html" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/images/kemi.jpg" alt="Photograph of Oluwakemi Elizabeth Bakare">
+        </div>
+      </div>
+    </section>
+
+    <!-- Short biography -->
+    <section>
+      <div class="container">
+        <h2 class="section-title">A Little About Me</h2>
+        <p class="section-intro">A short introduction before you look around.</p>
+        <article class="bio-box">
+          <p>
+            My name is Oluwakemi Elizabeth Bakare, and my friends call me Kemi. I am a student at
+            MIVA Open University where I am studying Computer Science.
+          </p>
+          <p>
+            I am learning how to build websites with HTML, CSS and JavaScript, and I enjoy turning
+            an idea into something people can see and use. My dream is to become a skilled web
+            developer and tech innovator.
+          </p>
+          <p>
+            Outside of coding, I love fashion, music and reading. I try to bring that
+            same love for good design into the websites I make.
+          </p>
+          <p class="quote">"Dream it. Plan it. Achieve it."</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Audio player -->
+    <section class="audio-section">
+      <div class="container">
+        <h2 class="section-title">Hear From Me</h2>
+        <p class="section-intro">Press play to listen to my voice note.</p>
+
+        <div class="audio-player">
+          <button class="play-btn" id="play-btn" aria-label="Play or pause">&#9654;</button>
+          <div class="audio-info">
+            <p class="audio-title">Voice note from Kemi</p>
+            <div class="progress-bar" id="progress-bar">
+              <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <p class="audio-time"><span id="current-time">0:00</span> / <span id="total-time">0:00</span></p>
+          </div>
+          <audio id="my-audio">
+            <source src="assets/audio/myAudio.mp3" type="audio/mpeg">
+            <source src="assets/audio/myAudio.aac" type="audio/aac">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick links -->
+    <section>
+      <div class="container">
+        <h2 class="section-title">Explore the Website</h2>
+        <p class="section-intro">Everything you need is just a click away.</p>
+        <div class="quick-grid">
+          <div class="quick-card">
+            <div class="icon">&#127891;</div>
+            <h3>About Me</h3>
+            <p>My education, skills, career goals and hobbies.</p>
+            <a href="about.html" class="btn btn-small">Read More</a>
+          </div>
+          <div class="quick-card">
+            <div class="icon">&#128187;</div>
+            <h3>My Projects</h3>
+            <p>Three websites I have designed and built.</p>
+            <a href="projects.html" class="btn btn-small">See Projects</a>
+          </div>
+          <div class="quick-card">
+            <div class="icon">&#128221;</div>
+            <h3>Academic Planner</h3>
+            <p>Add, finish and delete your school tasks.</p>
+            <a href="planner.html" class="btn btn-small">Open Planner</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      <a href="index.html">Home</a>|<a href="about.html">About</a>|<a href="projects.html">Projects</a>|<a href="planner.html">Planner</a>|<a href="contact.html">Contact</a>
+    </p>
+    <p>&copy; 2026 Oluwakemi Elizabeth Bakare. COS 106 Term Project, MIVA Open University.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
